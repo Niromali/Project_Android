@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_animation"
+                    android:layout_width="150dp"
+                    android:layout_height="412dp"
+                    app:srcCompat="@drawable/xo" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_translate"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:backgroundTint="#808080"
+                android:text="TRANSLATE" />
+
+            <Button
+                android:id="@+id/button_rotate"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:backgroundTint="#808080"
+                android:text="ROTATE" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_scale"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:backgroundTint="#808080"
+                android:text="SCALE" />
+
+            <Button
+                android:id="@+id/button_alpha"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:backgroundTint="#808080"
+                android:text="ALPHA" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="SET" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
